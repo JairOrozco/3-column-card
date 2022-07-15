@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+// Variables
+
+// Color
+$orange: hsl(31, 77%, 52%);
+$cyan: hsl(184, 100%, 22%);
+$darkCyan: hsl(179, 100%, 13%);
+$TransparentWhite: hsla(0, 0%, 100%, 0.75);
+$gray: hsl(0, 0%, 95%);
+
+// Typography
+
+$lexenDeca: 'Lexend Deca', sans-serif;
+$bigShoulders: 'Big Shoulders Display', cursive;
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 15px;
+    background-color: $gray;
+}
+
+.card {
+    &.sedans {
+        .card__buttonLearnMore{
+            color: $orange;
+        }
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: $orange;
+    }
+    &.suvs {
+        .card__buttonLearnMore{
+            color: $cyan;
+        }
+        background-color: $cyan;
+    }
+    &.luxury {
+        .card__buttonLearnMore{
+            color: $darkCyan;
+        }
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: $darkCyan;
+    }
+    max-width: 340px;
+    padding: 60px 35px;
+    font-family: $lexenDeca;
+    font-size: 1.5rem;
+    color: $TransparentWhite;
+    h2 {
+        margin: 30px 0px;
+        font-family: $bigShoulders;
+        font-size: 4.5rem;
+        text-transform: uppercase;
+        color: $gray;
+
+    }
+    .card__containerDescription {
+        margin-bottom: 40px;
+        padding-right: 40px;
+        line-height: 2.8rem;
+    }
+    .card__buttonLearnMore{
+        width: 150px;
+        height: 45px;
+        font-family: $lexenDeca;
+        font-size: 1.5rem;
+        border: 1px solid $gray;
+        border-radius: 25px;
+        background-color: $gray;
+    }
+    .card__buttonLearnMore:hover {
+        cursor: pointer;
+        border: 2px solid $gray;
+        color: $gray;
+        background-color: transparent;
+    }
+}
+
+

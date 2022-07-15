@@ -1,0 +1,44 @@
+
+main {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.card {
+    &.sedans {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+    }
+    &.suvs {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    &.luxury {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 15px;
+    }
+    width: 350px;
+    height: 600px;
+    padding: 60px 45px;
+    font-size: 1.6rem;
+    .card__containerImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        img {
+            width: 70px;
+        }
+    }
+    .card__containerDescription {
+        margin-bottom: 120px;
+        padding-right: 40px;
+        line-height: 3rem;
+    }
+    .card__buttonLearnMore{
+        height: 50px;
+    }
+}
