@@ -22,6 +22,10 @@ $gray: hsl(0, 0%, 95%);
 $lexenDeca: 'Lexend Deca', sans-serif;
 $bigShoulders: 'Big Shoulders Display', cursive;
 
+body {
+    background-color: $gray;
+}
+
 main {
     width: 100%;
     display: flex;
